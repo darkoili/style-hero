@@ -25,24 +25,7 @@
             margin-right: auto;
             width: 50%;
                         }
-#container {
-    height: 200vh;
-    width: 100%;
-}
 
-#mainImg {
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-}
-
-#brandStatement {
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    opacity: 0;
 }
 .column {
   float: left;
@@ -133,17 +116,17 @@
 <br>
 
 
-<div class="row" id="container">
-  <div class="column" id="mainImg">
+<div class="row">
+  <div class="column">
     <img src="resort-white.png" alt="resort shirt" width="350" height="600">
   </div>
-  <div class="column" id="mainImg">
+  <div class="column">
     <img src="seer-suit.png" alt="seer suit" width="350" height="600">
   </div>
-  <div class="column" id="mainImg">
+  <div class="column">
     <img src="knit-polo.png" alt="knit polo" width="350" height="600">
   </div>
-    <div class="column" id="mainImg">
+    <div class="column">
     <img src="pin-two.png" alt="pinstripe suit" width="350" height="600">
   </div>
 </div>
@@ -179,17 +162,17 @@
 <br>
 <br>
 
-<div class="row2" id="container">
-  <div class="column2"id="brandStatement">
+<div class="row2">
+  <div class="column2">
     <img src="crotched-hole.png" alt="knit polo" width="350" height="600">
   </div>
-  <div class="column2" id="brandStatement">
+  <div class="column2">
     <img src="orange-polo.png" alt="orange black polo" width="350" height="600">
   </div>
-  <div class="column2" id="brandStatement">
+  <div class="column2">
     <img src="sunni-two.png" alt="sunglasses" width="350" height="600">
   </div>
-    <div class="column2" id="brandStatement">
+    <div class="column2">
     <img src="waffle-polo.png" alt="waffle polo" width="350" height="600">
   </div>
 </div>
@@ -320,30 +303,7 @@
 
 
     <button>Generate my outfit!</button>
-
-<script type="text/javascript" src="main.js"></script>
-	
-<script> 
-let locked         = false,
-    mainImage      = document.getElementById('mainImg'),
-    brandStatement = document.getElementById('brandStatement');
-
-window.addEventListener('scroll', function() {
-    if (!locked) {
-        window.requestAnimationFrame(function() {
-
-            brandStatement.style.opacity = Math.min(window.scrollY / window.innerHeight, 1);
-            
-            if (brandStatement.style.opacity === '1') {
-                    // scroll to next content
-            }
-
-            locked = false;
-        });
-    }
-    locked = true;
-});  
-</script>       
+    
       
 </body>
 </html>
