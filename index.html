@@ -8,7 +8,7 @@
             font-family: Aptos, sans-serif;
             background-color: SteelBlue;
             line-height: 1.5;
-              height: 7500px;
+              height: 7900px;
 
         }
             h1 {text-align: center;}
@@ -313,7 +313,34 @@
 <br>
 <br>
     <button onclick="calculateCompatibility()" >Generate my outfit!</button>
+
+<script>
+function calculateCompatibility() {
+	let question1Response = document.getElementById("q1").selectedOptions[0].value;
+	let question2Response = document.getElementById("q2").selectedOptions[0].value;
+	let question3Response = document.getElementById("q3").selectedOptions[0].value;
+	let question4Response = document.getElementById("q4").selectedOptions[0].value;
+	let question5Response = document.getElementById("q5").selectedOptions[0].value;
+	let question6Response = document.getElementById("q6").selectedOptions[0].value;
+	let question7Response = document.getElementById("q7").selectedOptions[0].value;
+	let question8Response = document.getElementById("q8").selectedOptions[0].value;
+	let question9Response = document.getElementById("q9").selectedOptions[0].value;
+	let question10Response = document.getElementById("q10").selectedOptions[0].value;
+	let question11Response = document.getElementById("q11").selectedOptions[0].value;
+	let question12Response = document.getElementById("q12").selectedOptions[0].value;
+	let question13Response = document.getElementById("q13").selectedOptions[0].value;
+	let question14Response = document.getElementById("q14").selectedOptions[0].value;
+	let question15Response = document.getElementById("q15").selectedOptions[0].value;
+	let question16Response = document.getElementById("q16").selectedOptions[0].value;
+
+	let smartOneOption = question1Compatibility + question2Compatibility + question3Compatibility + question4Compatibility
+
+	if (smartOneOption>= 2) {
+		document.getElementById("compatibility").innerHTML = "Woah Test ! Your one SMART guy! Based on your quiz results you enjoy subtle elegance and a clean look. Here are your outfit suggestions below;
+ }
+
 	
+</script>
 <br>
 <br>
 <br>
@@ -376,7 +403,7 @@
 	<p> Round Sunglasses,&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspArticle No. 1044667002</p>
 	<p> Canvas Tote Bag,&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspArticle No. 1216591002</p>
 
-		<p id="compatibility"></p>
+	<p id="compatibility"></p>
 	
 </body>
 </html>
