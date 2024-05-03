@@ -323,6 +323,13 @@
 </div>	
 	
 <script>
+	function showQuiz() {
+            let quizSection = document.getElementById("quizSection");
+            quizSection.style.display = "block";
+            setTimeout(() => {
+                quizSection.style.opacity = 1;
+            }, 100);
+        }
  window.onscroll = function() {
             fadeQuizInSection();
         };
