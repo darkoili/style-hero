@@ -323,14 +323,21 @@
 </div>	
 	
 <script>
-        function showQuiz() {
-            let quizSection = document.getElementById("quizSection");
-            quizSection.style.display = "block";
-            setTimeout(() => {
+ window.onscroll = function() {
+            fadeQuizInSection();
+        };
+
+        function fadeQuizInSection() {
+            var quizSection = document.getElementById("quizSection");
+            var scrollPosition = window.scrollY;
+            var quizSectionPosition = quizSection.offsetTop;
+		
+            var triggerOffset = 300;
+
+            if (scrollPosition > (quizSectionPosition - triggerOffset)) {
                 quizSection.style.opacity = 1;
-            }, 100);
+            }
         }
-	
     function calculateCompatibility() {
         let question1Response = document.getElementById("q1").selectedOptions[0].value;
         let question2Response = document.getElementById("q2").selectedOptions[0].value;
