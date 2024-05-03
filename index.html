@@ -310,6 +310,10 @@
 	<br /><br /><br />
 	<button type="button" onclick="calculateCompatibility()">Calculate Compatibility</button>
 	<p id="compatibility"></p>
+	<p id="compatibility2"></p>
+	<p id="compatibility3"></p>
+	<p id="compatibility4"></p>
+	
 <script>
     function calculateCompatibility() {
         let question1Response = document.getElementById("q1").selectedOptions[0].value;
@@ -336,15 +340,16 @@
 
         if (smartOneOption >= 2) {
             document.getElementById("compatibility").innerHTML = "Your compatibility is 6";
-        } else if (smartTwoOption >= 2) {
-            document.getElementById("compatibility").innerHTML = "Your compatibility is 7";
-        } else if (streetOneOption >= 2) {
-            document.getElementById("compatibility").innerHTML = "Your compatibility is 8";
-        } else if (casualOneOption >= 2) {
-            document.getElementById("compatibility").innerHTML = "Your compatibility is 9";
-        } else {
-            document.getElementById("compatibility").innerHTML = "No specific compatibility found.";
-        }
+        }  
+	if (smartTwoOption >= 2) {
+            document.getElementById("compatibility2").innerHTML = "Your compatibility is 7";
+        } 
+	if (streetOneOption >= 2) {
+            document.getElementById("compatibility3").innerHTML = "Your compatibility is 8";
+        } 
+	if (casualOneOption >= 2) {
+            document.getElementById("compatibility4").innerHTML = "Your compatibility is 9";
+        } 
     }
 </script>
 </body>
