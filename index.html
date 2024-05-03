@@ -119,7 +119,7 @@
      </h2>
 	<h2 class="center"> Scroll down to start the quiz! </h2>
 	<button id="startButton" onclick="showQuiz()">Start</button>
-<div id="quizSection" style="display: none;">	
+<div id="quizSection">	
 <br>
 <br>
 <br>
@@ -323,30 +323,13 @@
 </div>	
 	
 <script>
-	   window.onscroll = function() {
-            fadeQuizInSection();
-        };
-
-        function showQuiz() {
-            var quizSection = document.getElementById("quizSection");
+	  function showQuiz() {
+            let quizSection = document.getElementById("quizSection");
             quizSection.style.display = "block";
-            setTimeout(function() {
+            setTimeout(() => {
                 quizSection.style.opacity = 1;
             }, 100);
         }
-
-        function fadeQuizInSection() {
-            var quizSection = document.getElementById("quizSection");
-            var scrollPosition = window.scrollY;
-            var quizSectionPosition = quizSection.offsetTop;
-
-            // Adjust the offset value as needed
-            var triggerOffset = 300;
-
-            if (scrollPosition > (quizSectionPosition - triggerOffset)) {
-                quizSection.style.opacity = 1;
-            }
-		
     function calculateCompatibility() {
         let question1Response = document.getElementById("q1").selectedOptions[0].value;
         let question2Response = document.getElementById("q2").selectedOptions[0].value;
