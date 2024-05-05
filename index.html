@@ -394,8 +394,22 @@
    		imgElement.height = 700;
 		imgElement.alt = 'smart one result';
 		document.getElementById("compatibility11").appendChild(imgElement);
-            document.getElementById("compatibility").innerHTML = "&nbsp;Woah ! Your one SMART guy! Based on your quiz results you enjoy subtle elegance and a clean look. Here are your outfit suggestions below:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Relaxed Fit Resort Shirt,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Article No. 1165059006&nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Article No. 1165059006 Regular Fit Linen Pants,&nbsp&nbspArticle No. 1064346019 Leather Sandals,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Article No. 0853284002 Bracelet,&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Article No. 1221051001";
-        }  
+		let textLines = [
+        "Woah! You're one SMART guy!",
+        "Based on your quiz results you enjoy subtle elegance and a clean look.",
+        "Here are your outfit suggestions below:",
+        "Relaxed Fit Resort Shirt, Article No. 1165059006",
+        "Regular Fit Linen Pants, Article No. 1064346019",
+        "Leather Sandals, Article No. 0853284002",
+        "Bracelet, Article No. 1221051001"
+    ];
+    textLines.forEach(line => {
+        let divElement = document.createElement('div');
+        divElement.textContent = line;
+        divElement.style.textAlign = 'center';
+        document.getElementById("compatibility").appendChild(divElement);
+    });
+}
 	if (smartTwoOption >= 2) {
 		let imgElement = document.createElement('img')
 		imgElement.src = 'smart-two-result.png';
