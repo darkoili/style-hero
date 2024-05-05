@@ -411,8 +411,28 @@
     });
 }
 	if (smartTwoOption >= 2) {
-            document.getElementById("compatibility2").innerHTML = "Woah ! Your one SMART TWO guy! Based on your quiz results you enjoy subtle elegance and a clean look. Here are your outfit suggestions below: Regular Fit Crochet Resort Shirt,&nbspArticle No. 1227289001 Regular Fit Linen Shorts,&nbsp&nbspArticle No. 1137721002 Leather Slides,&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspArticle No. 1230414001 Christian Dior Sauvage Eau De Parfum,&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspArticle No. 1221051001";
-        } 
+		let imgElement = document.createElement('img')
+		imgElement.src = 'smart-two-result.png';
+		imgElement.width = 1200;
+   		imgElement.height = 700;
+		imgElement.alt = 'smart two result';
+		document.getElementById("compatibility22").appendChild(imgElement);
+            let textLines = [
+        "Woah! You're one 2 SMART guy!",
+        "Based on your quiz results you enjoy subtle elegance and a clean look",
+        "Here are your outfit suggestions below:",
+        "Regular Fit Crochet Resort Shirt  -  Article No. 1227289001",
+        "Regular Fit Linen Shorts  -  Article No. 1137721002",
+        "Leather Slides  -  Article No. 1230414001",
+        "Christian Dior Sauvage Eau De Parfum  -  Article No. 1221051001"
+    ];
+    textLines.forEach(line => {
+        let divElement = document.createElement('div');
+        divElement.textContent = line;
+        divElement.style.textAlign = 'center';
+        document.getElementById("compatibility2").appendChild(divElement);
+    });
+}
 	if (streetOneOption >= 2) {
             document.getElementById("compatibility3").innerHTML = "Woah ! Your one STREET guy! Based on your quiz results you enjoy subtle elegance and a clean look. Here are your outfit suggestions below: Loose Fit Short-sleeved Shirt,&nbspArticle No. 1216430003 Relaxed Fit Denim Shorts,&nbsp&nbspArticle No. 1056769007 Adidas Sambas,&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspArticle No. 0853284002 Cotton Cap with Embroidery,&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspArticle No. 1048567032";
         } 
