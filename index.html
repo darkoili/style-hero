@@ -396,12 +396,12 @@
 		document.getElementById("compatibility11").appendChild(imgElement);
 		let textLines = [
         "Woah! You're one SMART guy!",
-        "Based on your quiz results you enjoy subtle elegance and a clean look.",
+        "Based on your quiz results you enjoy subtle elegance and a clean look",
         "Here are your outfit suggestions below:",
-        "Relaxed Fit Resort Shirt, Article No. 1165059006",
-        "Regular Fit Linen Pants, Article No. 1064346019",
-        "Leather Sandals, Article No. 0853284002",
-        "Bracelet, Article No. 1221051001"
+        "Relaxed Fit Resort Shirt  -  Article No. 1165059006",
+        "Regular Fit Linen Pants  -  Article No. 1064346019",
+        "Leather Sandals  -  Article No. 0853284002",
+        "Bracelet   -  Article No. 1221051001"
     ];
     textLines.forEach(line => {
         let divElement = document.createElement('div');
@@ -417,17 +417,45 @@
    		imgElement.height = 700;
 		imgElement.alt = 'smart two result';
 		document.getElementById("compatibility22").appendChild(imgElement);
-            document.getElementById("compatibility2").innerHTML = "Woah ! Your one SMART TWO guy! Based on your quiz results you enjoy subtle elegance and a clean look. Here are your outfit suggestions below: Regular Fit Crochet Resort Shirt,&nbspArticle No. 1227289001 Regular Fit Linen Shorts,&nbsp;&nbsp;Article No. 1137721002 Leather Slides,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Article No. 1230414001 Christian Dior Sauvage Eau De Parfum,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Article No. 1221051001";
-        } 
+            let textLines = [
+        "Woah! You're one SMART guy!",
+        "Based on your quiz results you enjoy subtle elegance and a clean look",
+        "Here are your outfit suggestions below:",
+        "Regular Fit Crochet Resort Shirt  -  Article No. 1227289001",
+        "Regular Fit Linen Shorts  -  Article No. 1137721002",
+        "Leather Slides  -  Article No. 1230414001",
+        "Christian Dior Sauvage Eau De Parfum  -  Article No. 1221051001"
+    ];
+    textLines.forEach(line => {
+        let divElement = document.createElement('div');
+        divElement.textContent = line;
+        divElement.style.textAlign = 'center';
+        document.getElementById("compatibility2").appendChild(divElement);
+    });
+}
 	if (streetOneOption >= 2) {
 		let imgElement = document.createElement('img')
 		imgElement.src = 'street-one-result.png';
 		imgElement.width = 1200;
    		imgElement.height = 700;
-		imgElement.alt = 'smart two result';
+		imgElement.alt = 'street one result';
 		document.getElementById("compatibility33").appendChild(imgElement);
-            document.getElementById("compatibility3").innerHTML = "Woah ! Your one STREET guy! Based on your quiz results you enjoy subtle elegance and a clean look. Here are your outfit suggestions below: Loose Fit Short-sleeved Shirt,&nbsp;Article No. 1216430003 Relaxed Fit Denim Shorts,&nbsp;&nbsp;Article No. 1056769007 Adidas Sambas,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Article No. 0853284002 Cotton Cap with Embroidery,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Article No. 1048567032";
-        } 
+            let textLines = [
+        "Woah! You're one STREET guy!",
+        "Based on your quiz results you enjoy subtle elegance and a clean look",
+        "Here are your outfit suggestions below:",
+        "Loose Fit Short-sleeved Shirt  -  Article No. 1216430003",
+        "Relaxed Fit Denim Shorts  -  Article No. 1056769007",
+        "Adidas Sambas  -  Article No. 0853284002",
+        "Cotton Cap with Embroidery  -  Article No. 1048567032"
+    ];
+    textLines.forEach(line => {
+        let divElement = document.createElement('div');
+        divElement.textContent = line;
+        divElement.style.textAlign = 'center';
+        document.getElementById("compatibility3").appendChild(divElement);
+    });
+}
 	if (casualOneOption >= 2) {
 		let imgElement = document.createElement('img')
 		imgElement.src = 'casual-one-result.png';
@@ -435,9 +463,22 @@
    		imgElement.height = 700;
 		imgElement.alt = 'casual one result';
 		document.getElementById("compatibility44").appendChild(imgElement);
-            document.getElementById("compatibility4").innerHTML = "Woah ! Your one CASUAL guy! Based on your quiz results you enjoy subtle elegance and a clean look. Here are your outfit suggestions below: Regular Fit Pique T-shirt,&nbsp;Article No. 1213293003 Regular Fit Cropped Cotton Chinos,&nbsp;&nbsp;Article No. 1210038002 Round Sunglasses,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Article No. 1044667002 Canvas Tote Bag,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Article No. 1216591002";
-        } 
-    }
+            let textLines = [
+        "Woah! You're one CASUAL guy!",
+        "Based on your quiz results you enjoy subtle elegance and a clean look",
+        "Here are your outfit suggestions below:",
+        "Regular Fit Pique T-shirt  -  Article No. 1213293003",
+        "Regular Fit Cropped Cotton Chinos  -  Article No. 1210038002",
+        "Round Sunglasses  -  Article No. 1044667002",
+        "Canvas Tote Bag  -  Article No. 1216591002"
+    ];
+    textLines.forEach(line => {
+        let divElement = document.createElement('div');
+        divElement.textContent = line;
+        divElement.style.textAlign = 'center';
+        document.getElementById("compatibility4").appendChild(divElement);
+    });
+}
 </script>
 </body>
 </html>
