@@ -357,15 +357,19 @@
 </div>	
 	
 <script>
-	  function showQuiz() {
-            let quizSection = document.getElementById("quizSection");
-            quizSection.style.display = "block";
-            setTimeout(() => {
-                quizSection.style.opacity = 1;
-            }, 100);
-        }
+	  function startFunction() {
+    showQuiz();
+}
 
-	document.getElementById("startButton").addEventListener("click", startFunction);
+function showQuiz() {
+    let quizSection = document.getElementById("quizSection");
+    quizSection.style.display = "block";
+    setTimeout(() => {
+        quizSection.style.opacity = 1;
+    }, 100);
+}
+
+document.getElementById("startButton").addEventListener("click", startFunction);
 	
     function calculateCompatibility() {
         let question1Response = document.getElementById("q1").selectedOptions[0].value;
