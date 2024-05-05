@@ -387,29 +387,7 @@
         let streetOneOption = parseInt(question9Response) + parseInt(question10Response) + parseInt(question11Response) + parseInt(question12Response);
         let casualOneOption = parseInt(question13Response) + parseInt(question14Response) + parseInt(question15Response) + parseInt(question16Response);
 
-        if (smartOneOption >= 2) {
-		let imgElement = document.createElement('img')
-		imgElement.src = 'smart-one-result.png';
-		imgElement.width = 1200;
-   		imgElement.height = 700;
-		imgElement.alt = 'smart one result';
-		document.getElementById("compatibility11").appendChild(imgElement);
-		let textLines = [
-        "Woah! You're one SMART guy!",
-        "Based on your quiz results you enjoy subtle elegance and a clean look",
-        "Here are your outfit suggestions below:",
-        "Relaxed Fit Resort Shirt  -  Article No. 1165059006",
-        "Regular Fit Linen Pants  -  Article No. 1064346019",
-        "Leather Sandals  -  Article No. 0853284002",
-        "Bracelet   -  Article No. 1221051001"
-    ];
-    textLines.forEach(line => {
-        let divElement = document.createElement('div');
-        divElement.textContent = line;
-        divElement.style.textAlign = 'center';
-        document.getElementById("compatibility").appendChild(divElement);
-    });
-}
+       
 </script>
 </body>
 </html>
