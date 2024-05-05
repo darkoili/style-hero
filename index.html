@@ -357,10 +357,7 @@
 </div>	
 	
 <script>
-	  function startFunction() {
-    showQuiz();
-}
-
+	
 function showQuiz() {
     let quizSection = document.getElementById("quizSection");
     quizSection.style.display = "block";
@@ -368,8 +365,6 @@ function showQuiz() {
         quizSection.style.opacity = 1;
     }, 100);
 }
-
-document.getElementById("startButton").addEventListener("click", startFunction);
 	
     function calculateCompatibility() {
         let question1Response = document.getElementById("q1").selectedOptions[0].value;
